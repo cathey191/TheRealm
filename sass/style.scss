@@ -29,10 +29,9 @@
 	height: auto;
 }
 
-// menu pages
+// page sections
 .mainContent{
 	padding-top: 55px;
-	// height: 99%;
 }
 .section{
 	width: 100%;
@@ -48,8 +47,11 @@
 	align-self: center;
 	padding: 15px 10px;
 }
-.half{
-	height: 50vh;
+.menuOption{
+	width: 90vw;
+	max-width: 550px;
+	margin: 0 auto;
+	padding-top: 30px;
 }
 
 // buttons
@@ -75,8 +77,10 @@
 .smallText{
 	color: $lightYellow;
 	font-size: 15px;
+	padding-bottom: 5px;
 }
 
+// standalone
 .floatLeft{
 	float: left;
 }
@@ -86,6 +90,19 @@
 .clear{
 	clear: both;
 }
+.half{
+	height: 46vh;
+}
+.alignCenter{
+	align-self: center;
+}
+.flexJust{
+	display: flex;
+	justify-content: space-around;
+}
+.botPad{
+	padding-bottom: 30px;
+}
 
 // Home page
 .topHome{
@@ -93,9 +110,6 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
-}
-.alignCenter{
-	align-self: center;
 }
 .bottomHome{
 	height: 25vh;

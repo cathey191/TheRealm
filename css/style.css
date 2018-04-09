@@ -41,8 +41,11 @@
   align-self: center;
   padding: 15px 10px; }
 
-.half {
-  height: 50vh; }
+.menuOption {
+  width: 90vw;
+  max-width: 550px;
+  margin: 0 auto;
+  padding-top: 30px; }
 
 .menuButton {
   background-color: #1a1a1a;
@@ -76,7 +79,8 @@
 
 .smallText {
   color: #faf5e3;
-  font-size: 15px; }
+  font-size: 15px;
+  padding-bottom: 5px; }
 
 .floatLeft {
   float: left; }
@@ -87,14 +91,24 @@
 .clear {
   clear: both; }
 
+.half {
+  height: 46vh; }
+
+.alignCenter {
+  align-self: center; }
+
+.flexJust {
+  display: flex;
+  justify-content: space-around; }
+
+.botPad {
+  padding-bottom: 30px; }
+
 .topHome {
   height: 75vh;
   width: 100%;
   display: flex;
   justify-content: center; }
-
-.alignCenter {
-  align-self: center; }
 
 .bottomHome {
   height: 25vh;
