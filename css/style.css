@@ -25,8 +25,7 @@
   height: auto; }
 
 .mainContent {
-  padding-top: 55px;
-  height: 100%; }
+  padding-top: 55px; }
 
 .section {
   width: 100%;
@@ -39,7 +38,11 @@
 
 .favSecton {
   width: 90vw;
-  align-self: center; }
+  align-self: center;
+  padding: 15px 10px; }
+
+.half {
+  height: 50vh; }
 
 .menuButton {
   background-color: #1a1a1a;
@@ -49,7 +52,6 @@
   text-decoration: none;
   padding: 5px 15px;
   border-radius: 5px;
-  margin: 5px;
   font-family: bookmania, serif;
   font-style: normal;
   font-weight: 300; }
@@ -60,7 +62,6 @@
   text-decoration: none;
   padding: 5px 15px;
   border-radius: 5px;
-  margin: 5px;
   font-family: bookmania, serif;
   font-style: normal;
   font-weight: 300; }
@@ -76,6 +77,15 @@
 .smallText {
   color: #faf5e3;
   font-size: 15px; }
+
+.floatLeft {
+  float: left; }
+
+.floatRight {
+  float: right; }
+
+.clear {
+  clear: both; }
 
 .topHome {
   height: 75vh;
@@ -104,7 +114,6 @@
   text-decoration: none;
   padding: 5px 15px;
   border-radius: 5px;
-  margin: 5px;
   font-family: bookmania, serif;
   font-style: normal;
   font-weight: 300;
