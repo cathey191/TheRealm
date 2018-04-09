@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+  font-family: sans-serif; }
+
+#nav {
+  width: 100%;
+  height: 55px;
+  color: #1a1a1a;
+  border-bottom: 1px solid #f7e1a8;
+  display: flex;
+  justify-content: space-between; }
+  #nav img {
+    margin: 0 auto;
+    height: 50px; }
+
+#mainContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center; }
+  #mainContent a {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #dabf8a;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 32px;
+    font-family: bookmania, serif;
+    font-style: normal;
+    font-weight: 300; }
+  #mainContent .section {
+    width: 100%;
+    height: 32vh;
+    min-height: 150px;
+    background-position: center center;
+    background-size: cover;
+    align-items: center; }
+  #mainContent .FnS {
+    background-image: url("../images/tap.jpg");
+    background-position: top center; }
+  #mainContent .drinks {
+    background-image: url("../images/beer2.jpg"); }
+  #mainContent .food {
+    background-image: url("../images/eggs.jpg"); }
+
+#top {
+  height: 75vh;
+  width: 100%;
+  text-align: center; }
+
+#bottom {
+  height: 25vh;
+  width: 100%;
+  text-align: center; }
+  #bottom a {
+    text-align: center;
+    background-color: #dabf8a;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: bookmania, serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px; }
+  #bottom h2 {
+    color: #dabf8a;
+    font-family: bookmania, serif;
+    font-style: normal;
+    font-weight: 300; }
+  #bottom p {
+    color: #faf5e3; }
+  #bottom input {
+    background-color: #faf5e3;
+    width: 200px; }
+
+/*# sourceMappingURL=style.css.map */

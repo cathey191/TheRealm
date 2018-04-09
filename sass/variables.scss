@@ -1,0 +1,42 @@
+$darkColor : #1a1a1a;
+$darkYellow : #dabf8a;
+$midYellow : #f7e1a8;
+$lightYellow : #faf5e3;
+
+@mixin text{
+	font-size: 20px;
+}
+
+@mixin serif{
+	font-family: bookmania, serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+@mixin button{
+	a{
+		text-align: center;
+		background-color: $darkYellow;
+		color: $darkColor;
+		text-decoration: none;
+		padding: 5px 15px;
+		border-radius: 5px;
+		margin: 5px;
+		@include serif;
+		@include text;
+	}
+}
+
+@mixin menuButton{
+	a{
+		text-align: center;
+		background-color: $darkColor;
+		color: $darkYellow;
+		text-decoration: none;
+		padding: 5px 10px;
+		border-radius: 5px;
+		margin: 5px;
+		font-size: 32px;
+		@include serif;
+	}
+}

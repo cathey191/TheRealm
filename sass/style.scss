@@ -1,0 +1,76 @@
+@import "variables.scss";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: $darkColor;
+	font-family: sans-serif;
+}
+
+#nav{
+	width: 100%;
+	height: 55px;
+	color: $darkColor;
+	border-bottom: 1px solid $midYellow;
+	display: flex;
+	justify-content: space-between;
+	img{
+		margin: 0 auto;
+		height: 50px;
+	}
+}
+
+#mainContent{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	@include menuButton;
+	.section{
+		width: 100%;
+		height: 32vh;
+		min-height: 150px;
+		background-position: center center;
+		background-size: cover;
+		align-items: center;
+	}
+	.FnS{
+		background-image: url("../images/tap.jpg");
+		background-position: top center;
+	}
+	.drinks{
+		background-image: url("../images/beer2.jpg");
+	}
+	.food{
+		background-image: url("../images/eggs.jpg");
+	}
+}
+
+#top{
+	height: 75vh;
+	width: 100%;
+	text-align: center;
+}
+
+#bottom{
+	height: 25vh;
+	width: 100%;
+	text-align: center;
+	@include button;
+	h2{
+		color: $darkYellow;
+		@include serif;
+	}
+	p{
+		color: $lightYellow;
+	}
+	input{
+		background-color: $lightYellow;
+		width: 200px;
+	}
+	a{
+
+	}
+}
