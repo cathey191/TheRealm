@@ -5,80 +5,138 @@
   background-color: #1a1a1a;
   font-family: sans-serif; }
 
-#nav {
+.nav {
+  position: fixed;
   width: 100%;
   height: 55px;
   color: #1a1a1a;
   border-bottom: 1px solid #f7e1a8;
   display: flex;
-  justify-content: space-between; }
-  #nav img {
-    margin: 0 auto;
-    height: 50px; }
-
-#mainContent {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  justify-content: space-between;
   align-items: center; }
-  #mainContent a {
-    text-align: center;
-    background-color: #1a1a1a;
-    color: #dabf8a;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 5px;
-    font-size: 32px;
-    font-family: bookmania, serif;
-    font-style: normal;
-    font-weight: 300; }
-  #mainContent .section {
-    width: 100%;
-    height: 32vh;
-    min-height: 150px;
-    background-position: center center;
-    background-size: cover;
-    align-items: center; }
-  #mainContent .FnS {
-    background-image: url("../images/tap.jpg");
-    background-position: top center; }
-  #mainContent .drinks {
-    background-image: url("../images/beer2.jpg"); }
-  #mainContent .food {
-    background-image: url("../images/eggs.jpg"); }
 
-#top {
+.navImg {
+  padding: 0px 7px;
+  height: 50px; }
+
+.navSmall {
+  padding: 0px 7px;
+  width: 50px;
+  height: auto; }
+
+.mainContent {
+  padding-top: 55px;
+  height: 100%; }
+
+.section {
+  width: 100%;
+  height: 32vh;
+  min-height: 150px;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center; }
+
+.favSecton {
+  width: 90vw;
+  align-self: center; }
+
+.menuButton {
+  background-color: #1a1a1a;
+  color: #dabf8a;
+  font-size: 32px;
+  align-self: center;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin: 5px;
+  font-family: bookmania, serif;
+  font-style: normal;
+  font-weight: 300; }
+
+.yellowButton {
+  background-color: #dabf8a;
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin: 5px;
+  font-family: bookmania, serif;
+  font-style: normal;
+  font-weight: 300; }
+
+.yellowHeader {
+  text-decoration: none;
+  color: #dabf8a;
+  font-size: 20px;
+  font-family: bookmania, serif;
+  font-style: normal;
+  font-weight: 300; }
+
+.smallText {
+  color: #faf5e3;
+  font-size: 15px; }
+
+.topHome {
   height: 75vh;
   width: 100%;
-  text-align: center; }
+  display: flex;
+  justify-content: center; }
 
-#bottom {
+.alignCenter {
+  align-self: center; }
+
+.bottomHome {
   height: 25vh;
   width: 100%;
   text-align: center; }
-  #bottom a {
-    text-align: center;
-    background-color: #dabf8a;
-    color: #1a1a1a;
-    text-decoration: none;
-    padding: 5px 15px;
-    border-radius: 5px;
-    margin: 5px;
-    font-family: bookmania, serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px; }
-  #bottom h2 {
-    color: #dabf8a;
-    font-family: bookmania, serif;
-    font-style: normal;
-    font-weight: 300; }
-  #bottom p {
-    color: #faf5e3; }
-  #bottom input {
-    background-color: #faf5e3;
-    width: 200px; }
+
+.input {
+  background-color: #faf5e3;
+  width: 225px;
+  font-size: 20px;
+  border: none;
+  margin: 10px; }
+
+.XlargeButton {
+  background-color: #dabf8a;
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin: 5px;
+  font-family: bookmania, serif;
+  font-style: normal;
+  font-weight: 300;
+  padding: 5px 90px; }
+
+.FnS {
+  background-image: url("../images/tap.jpg");
+  background-position: top center; }
+
+.drinks {
+  background-image: url("../images/beer2.jpg"); }
+
+.breakfast {
+  background-image: url("../images/eggs.jpg"); }
+
+.snacks {
+  background-image: url("../images/wedges.jpg"); }
+
+.BnS {
+  background-image: url("../images/burger.jpg"); }
+
+.pizza {
+  background-image: url("../images/pizza.jpg"); }
+
+.dinner {
+  background-image: url("../images/dinner.jpg"); }
+
+.desserts {
+  background-image: url("../images/icecream.jpg"); }
+
+.kMenu {
+  background-image: url("../images/nachos.jpg");
+  background-position: bottom center; }
 
 /*# sourceMappingURL=style.css.map */
