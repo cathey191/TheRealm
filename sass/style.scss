@@ -4,8 +4,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: $darkColor;
 	font-family: sans-serif;
+}
+
+body{
+	background-color: $darkColor;
 }
 
 // nav
@@ -46,6 +49,7 @@
 	width: 90vw;
 	align-self: center;
 	padding: 15px 10px;
+	background-color: $darkColor;
 }
 .menuOption{
 	width: 90vw;
@@ -104,6 +108,7 @@
 	padding-bottom: 30px;
 }
 
+
 // Home page
 .topHome{
 	height: 75vh;
@@ -159,4 +164,9 @@
 .kMenu{
 	background-image: url("../images/nachos.jpg");
 	background-position: bottom center;
+}
+
+.originalText,
+.removeButton{
+	background-color: transparent;
 }

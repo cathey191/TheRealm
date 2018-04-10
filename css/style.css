@@ -2,8 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #1a1a1a;
   font-family: sans-serif; }
+
+body {
+  background-color: #1a1a1a; }
 
 .nav {
   position: fixed;
@@ -39,7 +41,8 @@
 .favSecton {
   width: 90vw;
   align-self: center;
-  padding: 15px 10px; }
+  padding: 15px 10px;
+  background-color: #1a1a1a; }
 
 .menuOption {
   width: 90vw;
@@ -57,7 +60,7 @@
   border-radius: 5px;
   font-family: bookmania, serif;
   font-style: normal;
-  font-weight: 300; }
+  font-weight: bold; }
 
 .yellowButton {
   background-color: #dabf8a;
@@ -67,7 +70,7 @@
   border-radius: 5px;
   font-family: bookmania, serif;
   font-style: normal;
-  font-weight: 300; }
+  font-weight: bold; }
 
 .yellowHeader {
   text-decoration: none;
@@ -75,7 +78,7 @@
   font-size: 20px;
   font-family: bookmania, serif;
   font-style: normal;
-  font-weight: 300; }
+  font-weight: bold; }
 
 .smallText {
   color: #faf5e3;
@@ -130,7 +133,7 @@
   border-radius: 5px;
   font-family: bookmania, serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: bold;
   padding: 5px 90px; }
 
 .FnS {
@@ -161,5 +164,9 @@
 .kMenu {
   background-image: url("../images/nachos.jpg");
   background-position: bottom center; }
+
+.originalText,
+.removeButton {
+  background-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */
