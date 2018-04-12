@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 700px; }
+  max-width: 500px; }
 
 .navLine {
   border: none;
@@ -43,10 +43,21 @@ body {
   margin: 0px 7px;
   width: 45px; }
 
-.mainContent {
+.mainContent, .mainMenu {
   padding-top: 55px; }
 
 .section {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 32vh;
+  min-height: 150px; }
+
+.menuSection {
   margin: 0 auto;
   width: 100%;
   max-width: 500px;
@@ -75,7 +86,7 @@ body {
 
 .menuOption {
   width: 90vw;
-  max-width: 550px;
+  max-width: 500px;
   margin: 0 auto;
   padding-top: 30px; }
 
@@ -201,7 +212,21 @@ body {
     flex-wrap: wrap;
     justify-content: center; }
 
-  .section, .favSection {
-    margin: 0px; } }
+  .section {
+    margin: 0px;
+    width: 50vw; }
+
+  .favSection {
+    margin: 0px;
+    max-height: 400px; }
+
+  .menuSection {
+    margin: 0 auto; } }
+@media only screen and (min-width: 1000px) {
+  .navContent {
+    max-width: 750px; }
+
+  .menuOption {
+    margin: 0px 15px; } }
 
 /*# sourceMappingURL=style.css.map */
