@@ -18,13 +18,21 @@ body {
   align-items: center; }
 
 .navImg {
-  padding: 0px 7px;
-  height: 50px; }
+  height: 50px;
+  align-self: center; }
 
-.navSmall {
-  padding: 0px 7px;
-  width: 50px;
-  height: auto; }
+.navOrder {
+  width: 55px;
+  margin: 0px 7px; }
+
+.navArrow {
+  width: 45px;
+  margin: 0px 7px; }
+
+.logOut {
+  line-height: 80%;
+  margin: 0px 7px;
+  width: 45px; }
 
 .mainContent {
   padding-top: 55px; }

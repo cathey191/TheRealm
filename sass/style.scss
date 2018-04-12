@@ -23,13 +23,21 @@ body{
 	align-items: center;
 }
 .navImg{
-	padding: $navPadding;
 	height: 50px;
+	align-self: center;
 }
-.navSmall{
-	padding: $navPadding;
-	width: 50px;
-	height: auto;
+.navOrder{
+	width: 55px;
+	margin: $navMargin;
+}
+.navArrow{
+	width: 45px;
+	margin: $navMargin;
+}
+.logOut{
+	line-height: 80%;
+	margin: $navMargin;
+	width: 45px;
 }
 
 // page sections
@@ -107,7 +115,6 @@ body{
 .botPad{
 	padding-bottom: 30px;
 }
-
 
 // Home page
 .topHome{
