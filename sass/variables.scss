@@ -20,3 +20,13 @@ $navMargin : 0px 7px;
 	border-radius: 5px;
 	@include serif
 }
+
+@mixin allSections{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 500px;
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+}
