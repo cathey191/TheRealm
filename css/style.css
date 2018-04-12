@@ -174,6 +174,21 @@ body {
   font-weight: bold;
   padding: 5px 90px; }
 
+.backgroundPop {
+  width: 100%;
+  width: 100%;
+  background-color: #1a1a1a;
+  opacity: 0.5;
+  z-index: 99; }
+
+.display {
+  display: none; }
+
+.popUp {
+  background-color: #1a1a1a;
+  width: 90vw;
+  margin: 15px 5px; }
+
 .FnS {
   background-image: url("../images/tap.jpg");
   background-position: top center; }
@@ -190,7 +205,7 @@ body {
 .BnS {
   background-image: url("../images/burger.jpg"); }
 
-.pizza {
+.pizza, .pizzaDeal {
   background-image: url("../images/pizza.jpg"); }
 
 .dinner {
@@ -205,6 +220,9 @@ body {
 
 .brunch {
   background-image: url("../images/basicBrunch.jpg"); }
+
+.twoMains {
+  background-image: url("../images/dinner.jpg"); }
 
 @media only screen and (min-width: 500px) {
   .mainContent {
@@ -221,7 +239,8 @@ body {
     max-height: 400px; }
 
   .menuSection {
-    margin: 0 auto; } }
+    margin: 0 auto;
+    flex: 6; } }
 @media only screen and (min-width: 1000px) {
   .navContent {
     max-width: 750px; }

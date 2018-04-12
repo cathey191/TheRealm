@@ -154,6 +154,76 @@ body{
 	padding: 5px 90px;
 }
 
+.backgroundPop{
+	width: 100%;
+	width: 100%;
+	background-color: $darkColor;
+	opacity: 0.5;
+	z-index: 99;
+}
+.display{
+	display: none;
+}
+.popUp{
+	background-color: $darkColor;
+	width: 90vw;
+	margin: 15px 5px;
+}
+
+
+// .overlay{
+// 	position: fixed;
+// 	top: 0px;
+// 	left: 0px;
+// 	width: 100%;
+// 	height: 100%;
+// 	background-color: $darkColor;
+// 	opacity: 0.5;
+// 	z-index: 100;
+// 	display: none;
+// }
+// .popUp{
+// 	width: 100%;
+// 	margin: 0 auto;
+// 	display: none;
+// 	position: fixed;
+// 	z-index: 101;
+// }
+// .cnt223{
+// min-width: 600px;
+// width: 600px;
+// min-height: 150px;
+// margin: 100px auto;
+// background: #f3f3f3;
+// position: relative;
+// z-index: 103;
+// padding: 15px 35px;
+// border-radius: 5px;
+// box-shadow: 0 2px 5px #000;
+// }
+// .cnt223 p{
+// clear: both;
+//     color: #555555;
+//     /* text-align: justify; */
+//     font-size: 20px;
+//     font-family: sans-serif;
+// }
+// .cnt223 p a{
+// color: #d91900;
+// font-weight: bold;
+// }
+// .cnt223 .x{
+// float: right;
+// height: 35px;
+// left: 22px;
+// position: relative;
+// top: -25px;
+// width: 34px;
+// }
+// .cnt223 .x:hover{
+// cursor: pointer;
+// }
+
 // Menu Options
 .FnS{
 	background-image: url("../images/tap.jpg");
@@ -171,7 +241,7 @@ body{
 .BnS{
 	background-image: url("../images/burger.jpg");
 }
-.pizza{
+.pizza, .pizzaDeal{
 	background-image: url("../images/pizza.jpg");
 }
 .dinner{
@@ -186,6 +256,9 @@ body{
 }
 .brunch{
 	background-image: url("../images/basicBrunch.jpg");
+}
+.twoMains{
+	background-image: url("../images/dinner.jpg");
 }
 
 @media only screen and (min-width: 500px){
@@ -204,6 +277,7 @@ body{
 	}
 	.menuSection{
 		margin: 0 auto;
+		flex: 6;
 	}
 }
 
