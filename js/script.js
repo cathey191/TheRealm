@@ -1,59 +1,64 @@
 $(document).ready(function(){
-// $(document).on('click', '.remove', function(){
-// 	console.log("test");
-// });
-
-	// $(".add").click(function(){
-	// 	console.log($(this));
-	// 	$(this).text("Remove");
-	// 	$(this).toggleClass("add remove");
-	//
-	// 	// $(this).removeClass("add");
-	// 	// $(this).addClass("remove");
-	// });
-	//
-	//
-	// $(".remove").click(function(){
-	// 	console.log($(this));
-	// 	$(this).text("Add Small $13");
-	// 	$(this).toggleClass("add remove");
-	// 	// $(this).removeClass("remove");
-	// 	// $(this).addClass("add");
-	// });
-
-	// $('.yellowButton').click(function(){
-	// 	$(this).toggleClass('add remove');
-	// });
-	// $('.add').click(function(){
-	// 	$(this).append('<span class="removeButton">remove</span>')
-	// })
 
 	$(document).on('click', '.add', function(){
-		$(this).toggleClass('add remove');
 		$(this).find('.originalText').hide();
 		$(this).append("<span class='removeButton'>Remove<span>");
-		// var timeout = setTimeout(function(){
-		//
-		// })
-		// setTimeout(changeback, 3000);
+
+		// function WITHOUT ()'s, then timeout, then values to give the function
+		setTimeout(changeback, 3000, $(this));
 	});
 
-	// function changeback(test){
-	// 	test.find('.originalText').show();
-	// 	test.find('.removeButton').remove();
-	// }
-	// var hide_after_fadeout = function(){
-	//   $('.removeButton').css("display", "none");
-	//   $('.originalText').css("opacity", "1");
-	// };
-
-
-	$(document).on('click', '.remove', function(){
-		$(this).toggleClass('add remove');
-		$(this).find('.originalText').show();
-		$(this).find('.removeButton').remove();
-	});
-
-
-
+	 function changeback(test){
+		test.find('.removeButton').remove();
+	 	test.find('.originalText').show();
+	 }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// EXTRA CREDIT....
+// replace with this:
+
+
+// $(document).on('click', '.add', function(){
+// 	var timeout = 5;
+// 	$(this).toggleClass('add remove');
+// 	$(this).find('.originalText').hide();
+// 	$(this).append("<span class='removeButton'>Remove  "+timeout+"<span>");
+//
+// 	for (var i=timeout;i>0;i--){
+// 		setTimeout(fancyChangeback, i*1000, [$(this), timeout-i]);
+// 	};
+// });
+//
+//
+// function fancyChangeback(input){
+//  var test = input[0];
+//  var i = input[1];
+//
+//  if (i != 0){
+//     test.find(".removeButton").text("Remove "+i);
+// } else {
+//     test.find('.removeButton').remove();
+//     test.find('.originalText').show();
+// };
+// };
+// });
