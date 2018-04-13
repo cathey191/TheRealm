@@ -92,6 +92,7 @@ body{
 	background-color: $darkYellow;
 	color: $darkColor;
 	@include button;
+	margin: 0px 5px;
 }
 
 .yellowHeader{
@@ -140,89 +141,57 @@ body{
 	width: 100%;
 	text-align: center;
 }
+.loginWidth{
+	width: 230px;
+	margin: 0 auto;
+}
 .input{
 	background-color: $lightYellow;
-	width: 225px;
 	font-size: 20px;
 	border: none;
-	margin: 10px;
-}
-.XlargeButton{
-	background-color: $darkYellow;
-	color: $darkColor;
-	@include button;
-	padding: 5px 90px;
+	margin: 7px;
 }
 
+// Pop Up Container
+.popContainer{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+}
 .backgroundPop{
-	width: 100%;
-	width: 100%;
-	background-color: $darkColor;
-	opacity: 0.5;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(26, 26, 26, 0.6);
 	z-index: 99;
+	display: flex;
 }
 .display{
 	display: none;
 }
 .popUp{
 	background-color: $darkColor;
-	width: 90vw;
-	margin: 15px 5px;
+	width: 80%;
+	max-width: 500px;
+	height: 75px;
+	margin: 0 auto;
+	padding: 10px;
+	align-self: center;
+	text-align: center;
+	z-index: 100;
 }
-
-
-// .overlay{
-// 	position: fixed;
-// 	top: 0px;
-// 	left: 0px;
-// 	width: 100%;
-// 	height: 100%;
-// 	background-color: $darkColor;
-// 	opacity: 0.5;
-// 	z-index: 100;
-// 	display: none;
-// }
-// .popUp{
-// 	width: 100%;
-// 	margin: 0 auto;
-// 	display: none;
-// 	position: fixed;
-// 	z-index: 101;
-// }
-// .cnt223{
-// min-width: 600px;
-// width: 600px;
-// min-height: 150px;
-// margin: 100px auto;
-// background: #f3f3f3;
-// position: relative;
-// z-index: 103;
-// padding: 15px 35px;
-// border-radius: 5px;
-// box-shadow: 0 2px 5px #000;
-// }
-// .cnt223 p{
-// clear: both;
-//     color: #555555;
-//     /* text-align: justify; */
-//     font-size: 20px;
-//     font-family: sans-serif;
-// }
-// .cnt223 p a{
-// color: #d91900;
-// font-weight: bold;
-// }
-// .cnt223 .x{
-// float: right;
-// height: 35px;
-// left: 22px;
-// position: relative;
-// top: -25px;
-// width: 34px;
-// }
-// .cnt223 .x:hover{
-// cursor: pointer;
-// }
+.exit{
+	width: 40px;
+	float: right;
+}
+.crossLeft, .crossRight{
+	@include cross;
+}
+.crossLeft{
+	transform: rotate(45deg);
+}
+.crossRight{
+	transform: rotate(-45deg);
+}
 
 // Menu Options
 .FnS{

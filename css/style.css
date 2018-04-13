@@ -110,7 +110,8 @@ body {
   border-radius: 5px;
   font-family: bookmania, serif;
   font-style: normal;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0px 5px; }
 
 .yellowHeader {
   text-decoration: none;
@@ -156,38 +157,61 @@ body {
   width: 100%;
   text-align: center; }
 
+.loginWidth {
+  width: 230px;
+  margin: 0 auto; }
+
 .input {
   background-color: #faf5e3;
-  width: 225px;
   font-size: 20px;
   border: none;
-  margin: 10px; }
+  margin: 7px; }
 
-.XlargeButton {
-  background-color: #dabf8a;
-  color: #1a1a1a;
-  text-decoration: none;
-  padding: 5px 15px;
-  border-radius: 5px;
-  font-family: bookmania, serif;
-  font-style: normal;
-  font-weight: bold;
-  padding: 5px 90px; }
+.popContainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed; }
 
 .backgroundPop {
-  width: 100%;
-  width: 100%;
-  background-color: #1a1a1a;
-  opacity: 0.5;
-  z-index: 99; }
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(26, 26, 26, 0.6);
+  z-index: 99;
+  display: flex; }
 
 .display {
   display: none; }
 
 .popUp {
   background-color: #1a1a1a;
-  width: 90vw;
-  margin: 15px 5px; }
+  width: 80%;
+  max-width: 500px;
+  height: 75px;
+  margin: 0 auto;
+  padding: 10px;
+  align-self: center;
+  text-align: center;
+  z-index: 100; }
+
+.exit {
+  width: 40px;
+  float: right; }
+
+.crossLeft, .crossRight {
+  width: 100%;
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: #f7e1a8;
+  border: none;
+  border-radius: 5px; }
+
+.crossLeft {
+  transform: rotate(45deg); }
+
+.crossRight {
+  transform: rotate(-45deg); }
 
 .FnS {
   background-image: url("../images/tap.jpg");

@@ -30,3 +30,14 @@ $navMargin : 0px 7px;
 	display: flex;
 	justify-content: center;
 }
+
+@mixin cross {
+	width: 100%;
+	display: block;
+	position: absolute;
+	width: 40px;
+	height: 5px;
+	background-color: $midYellow;
+	border: none;
+	border-radius: 5px;
+}

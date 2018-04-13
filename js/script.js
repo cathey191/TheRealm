@@ -28,10 +28,9 @@ $(document).ready(function(){
 		  $(".pizza, .dinner, .desserts").hide();
 	 }
 
-	 // if (day == 4 && hour >= 16){
-	 if (hour >= 2){
+	 if (day == 4 && hour >= 16){
 		 $(".pizzaDeal").show();
-		 $(".backgroundPop").removeClass("display");
+		 $(".popContainer").removeClass("display");
 	 } else {
 		 $(".pizzaDeal").hide();
 	 }
@@ -40,28 +39,5 @@ $(document).ready(function(){
 	 } else {
 		 $(".twoMains").hide();
 	 }
-
-
-	 // $(function(){
-		//  var overlay = $('<div id="overlay"></div>');
-		//  overlay.show();
-		//  overlay.appendTo(document.body);
-		//  $('.popup').show();
-		//  $('.close').click(function(){
-		// 	 $('.popup').hide();
-		// 	 overlay.appendTo(document.body).remove();
-		// 	 return false;
-		//  });
-
-
-
-
-		//  $('.x').click(function(){
-		// 	 $('.popup').hide();
-		// 	 overlay.appendTo(document.body).remove();
-		// 	 return false;
-		//  });
-	 // });
-
 
 });
