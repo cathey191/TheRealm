@@ -113,6 +113,17 @@ body {
   font-weight: bold;
   margin: 0px 5px; }
 
+.largeButton {
+  background-color: #dabf8a;
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-family: bookmania, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px; }
+
 .yellowHeader {
   text-decoration: none;
   color: #dabf8a;
@@ -179,31 +190,25 @@ body {
   z-index: 99;
   display: flex; }
 
-.display {
-  display: none; }
-
 .popUp {
   background-color: #1a1a1a;
-  width: 80%;
-  max-width: 500px;
-  height: 75px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   align-self: center;
-  text-align: center;
   z-index: 100; }
 
 .exit {
   width: 40px;
+  height: 40px;
   float: right; }
 
 .crossLeft, .crossRight {
   width: 100%;
   display: block;
   position: absolute;
-  width: 40px;
+  width: 35px;
   height: 5px;
-  background-color: #f7e1a8;
+  background-color: #dabf8a;
   border: none;
   border-radius: 5px; }
 
@@ -212,6 +217,9 @@ body {
 
 .crossRight {
   transform: rotate(-45deg); }
+
+.display {
+  display: none; }
 
 .FnS {
   background-image: url("../images/tap.jpg");

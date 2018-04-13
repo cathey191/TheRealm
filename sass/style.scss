@@ -94,6 +94,12 @@ body{
 	@include button;
 	margin: 0px 5px;
 }
+.largeButton{
+	background-color: $darkYellow;
+	color: $darkColor;
+	@include button;
+	font-size: 25px;
+}
 
 .yellowHeader{
 	text-decoration: none;
@@ -108,7 +114,7 @@ body{
 	font-family: sans-serif;
 }
 
-// standalone
+// stand alone
 .floatLeft{
 	float: left;
 }
@@ -165,22 +171,16 @@ body{
 	z-index: 99;
 	display: flex;
 }
-.display{
-	display: none;
-}
 .popUp{
 	background-color: $darkColor;
-	width: 80%;
-	max-width: 500px;
-	height: 75px;
 	margin: 0 auto;
-	padding: 10px;
+	padding: 20px;
 	align-self: center;
-	text-align: center;
 	z-index: 100;
 }
 .exit{
 	width: 40px;
+	height: 40px;
 	float: right;
 }
 .crossLeft, .crossRight{
@@ -191,6 +191,9 @@ body{
 }
 .crossRight{
 	transform: rotate(-45deg);
+}
+.display{
+	display: none;
 }
 
 // Menu Options

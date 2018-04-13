@@ -22,7 +22,7 @@ $(document).ready(function(){
 		  $(".brunch").hide();
 	 }
 
-	 if (hour > 16){
+	 if (hour >= 16){
 		 $(".pizza, .dinner, .desserts").show();
 	 } else {
 		  $(".pizza, .dinner, .desserts").hide();
@@ -39,5 +39,9 @@ $(document).ready(function(){
 	 } else {
 		 $(".twoMains").hide();
 	 }
+
+	 $(".exit").click(function(){
+ 		$(".popContainer").addClass("display");
+ 	});
 
 });
