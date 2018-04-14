@@ -172,6 +172,18 @@ body {
   width: 230px;
   margin: 0 auto; }
 
+.loginButton {
+  background-color: #dabf8a;
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-family: bookmania, serif;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px 5px;
+  border: none; }
+
 .input {
   background-color: #faf5e3;
   font-size: 20px;

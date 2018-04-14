@@ -151,6 +151,13 @@ body{
 	width: 230px;
 	margin: 0 auto;
 }
+.loginButton{
+	background-color: $darkYellow;
+	color: $darkColor;
+	@include button;
+	margin: 0px 5px;
+	border: none;
+}
 .input{
 	background-color: $lightYellow;
 	font-size: 20px;
