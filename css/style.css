@@ -146,7 +146,7 @@ body {
 .yellowHeader {
   text-decoration: none;
   color: #dabf8a;
-  font-size: 20px;
+  font-size: text;
   font-family: bookmania, serif;
   font-style: normal;
   font-weight: bold; }
@@ -216,7 +216,7 @@ body {
   height: 40px;
   float: right; }
 
-.crossLeft, .crossRight {
+.crossLeft {
   width: 100%;
   display: block;
   position: absolute;
@@ -224,16 +224,25 @@ body {
   height: 5px;
   background-color: #dabf8a;
   border: none;
-  border-radius: 5px; }
-
-.crossLeft {
+  border-radius: 5px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -moz-transform: rotate(45deg); }
 
 .crossRight {
-  transform: rotate(-45deg); }
+  width: 100%;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background-color: #dabf8a;
+  border: none;
+  border-radius: 5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg); }
 
 .floatLeft {
   float: left; }

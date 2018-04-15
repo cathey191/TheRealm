@@ -3,10 +3,7 @@ $darkYellow : #dabf8a;
 $midYellow : #f7e1a8;
 $lightYellow : #faf5e3;
 $navMargin : 0px 7px;
-
-@mixin text{
-	font-size: 20px;
-}
+$textSmall : 20px;
 
 @mixin serif{
 	font-family: bookmania, serif;

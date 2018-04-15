@@ -114,7 +114,7 @@ body{
 .yellowHeader{
 	text-decoration: none;
 	color: $darkYellow;
-	@include text;
+	font-size: text;
 	@include serif;
 }
 .smallText{
@@ -180,17 +180,19 @@ body{
 	height: 40px;
 	float: right;
 }
-.crossLeft, .crossRight{
-	@include cross;
-}
 .crossLeft{
+	@include cross;
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 }
 .crossRight{
+	@include cross;
 	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
 }
 
 // stand alone
