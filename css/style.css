@@ -44,7 +44,9 @@ body {
   width: 45px; }
 
 .mainContent, .mainMenu {
-  padding-top: 55px; }
+  padding-top: 55px;
+  width: 100vw;
+  height: 100vh; }
 
 .section {
   margin: 0 auto;
@@ -98,6 +100,7 @@ body {
   text-decoration: none;
   padding: 5px 15px;
   border-radius: 5px;
+  text-align: center;
   font-family: bookmania, serif;
   font-style: normal;
   font-weight: bold; }
@@ -108,6 +111,7 @@ body {
   text-decoration: none;
   padding: 5px 15px;
   border-radius: 5px;
+  text-align: center;
   font-family: bookmania, serif;
   font-style: normal;
   font-weight: bold;
@@ -116,13 +120,28 @@ body {
 .largeButton {
   background-color: #dabf8a;
   color: #1a1a1a;
+  font-size: 25px;
   text-decoration: none;
   padding: 5px 15px;
   border-radius: 5px;
+  text-align: center;
   font-family: bookmania, serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 25px; }
+  font-weight: bold; }
+
+.paymentButton {
+  background-color: #dabf8a;
+  color: #1a1a1a;
+  font-size: 25px;
+  width: 200px;
+  margin: 15px 0px;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: bookmania, serif;
+  font-style: normal;
+  font-weight: bold; }
 
 .yellowHeader {
   text-decoration: none;
@@ -137,25 +156,6 @@ body {
   font-size: 15px;
   padding-bottom: 5px;
   font-family: sans-serif; }
-
-.floatLeft {
-  float: left; }
-
-.floatRight {
-  float: right; }
-
-.clear {
-  clear: both; }
-
-.alignCenter {
-  align-self: center; }
-
-.flexJust {
-  display: flex;
-  justify-content: space-around; }
-
-.botPad {
-  padding-bottom: 30px; }
 
 .topHome {
   height: 75vh;
@@ -178,6 +178,7 @@ body {
   text-decoration: none;
   padding: 5px 15px;
   border-radius: 5px;
+  text-align: center;
   font-family: bookmania, serif;
   font-style: normal;
   font-weight: bold;
@@ -219,17 +220,51 @@ body {
   width: 100%;
   display: block;
   position: absolute;
-  width: 35px;
+  width: 30px;
   height: 5px;
   background-color: #dabf8a;
   border: none;
   border-radius: 5px; }
 
 .crossLeft {
-  transform: rotate(45deg); }
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg); }
 
 .crossRight {
   transform: rotate(-45deg); }
+
+.floatLeft {
+  float: left; }
+
+.floatRight {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.alignCenter {
+  align-self: center; }
+
+.flexJust {
+  display: flex;
+  justify-content: space-around; }
+
+.flexBetw {
+  display: flex;
+  justify-content: space-between; }
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.botPad {
+  padding-bottom: 30px; }
+
+.heightZero {
+  height: 0px; }
 
 .display {
   display: none; }

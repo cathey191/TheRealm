@@ -12,10 +12,6 @@ $(document).ready(function(){
 	 	test.find(".originalText").show();
 	 }
 
-	 $(".drinks, .kMenu, .brunch").click(function(){
-		 $(".popDError").removeClass("display")
-	 });
-
 	 var date = new Date();
 	 var day = date.getDay();
 	 var hour = date.getHours();
@@ -32,8 +28,8 @@ $(document).ready(function(){
 		  $(".pizza, .dinner, .desserts").hide();
 	 }
 
-	 if (day == 4 && hour >= 16){
-		 $(".pizzaDeal").show();
+	 if (day == 4 && hour >= 16 || day == 1){
+		 $(".pizzaDeal, .pizza").show();
 		 $(".popContainer").removeClass("display");
 	 } else {
 		 $(".pizzaDeal").hide();
@@ -44,7 +40,19 @@ $(document).ready(function(){
 		 $(".twoMains").hide();
 	 }
 
-	 $(".exit").click(function(){
+	 $(".drinks, .kMenu, .brunch").click(function(){
+		 $(".popDError").removeClass("display")
+	 });
+	 $(".cash").click(function(){
+		 $(".atCont").removeClass("display")
+		 $(".counter").removeClass("display")
+	 });
+	 $(".CC, .tab").click(function(){
+		 $(".atCont").removeClass("display")
+		 $(".onCard").removeClass("display")
+	 });
+
+	 $(".close").click(function(){
  		$(".popContainer, .popDError").addClass("display");
  	});
 

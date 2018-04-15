@@ -52,6 +52,8 @@ body{
 // page sections
 .mainContent, .mainMenu{
 	padding-top: 55px;
+	width: 100vw;
+	height: 100vh;
 }
 .section{
 	@include allSections;
@@ -97,8 +99,16 @@ body{
 .largeButton{
 	background-color: $darkYellow;
 	color: $darkColor;
-	@include button;
 	font-size: 25px;
+	@include button;
+}
+.paymentButton{
+	background-color: $darkYellow;
+	color: $darkColor;
+	font-size: 25px;
+	width: 200px;
+	margin: 15px 0px;
+	@include button;
 }
 
 .yellowHeader{
@@ -112,27 +122,6 @@ body{
 	font-size: 15px;
 	padding-bottom: 5px;
 	font-family: sans-serif;
-}
-
-// stand alone
-.floatLeft{
-	float: left;
-}
-.floatRight{
-	float: right;
-}
-.clear{
-	clear: both;
-}
-.alignCenter{
-	align-self: center;
-}
-.flexJust{
-	display: flex;
-	justify-content: space-around;
-}
-.botPad{
-	padding-bottom: 30px;
 }
 
 // Home page
@@ -196,9 +185,45 @@ body{
 }
 .crossLeft{
 	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
 }
 .crossRight{
 	transform: rotate(-45deg);
+}
+
+// stand alone
+.floatLeft{
+	float: left;
+}
+.floatRight{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.alignCenter{
+	align-self: center;
+}
+.flexJust{
+	display: flex;
+	justify-content: space-around;
+}
+.flexBetw{
+	display: flex;
+	justify-content: space-between;
+}
+.flexCol{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.botPad{
+	padding-bottom: 30px;
+}
+.heightZero{
+	height: 0px;
 }
 .display{
 	display: none;

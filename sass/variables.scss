@@ -18,6 +18,7 @@ $navMargin : 0px 7px;
 	text-decoration: none;
 	padding: 5px 15px;
 	border-radius: 5px;
+	text-align: center;
 	@include serif
 }
 
@@ -35,7 +36,7 @@ $navMargin : 0px 7px;
 	width: 100%;
 	display: block;
 	position: absolute;
-	width: 35px;
+	width: 30px;
 	height: 5px;
 	background-color: $darkYellow;
 	border: none;

@@ -2,15 +2,15 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title>The Realm Menu</title>
+		<title>The Realm Payment</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
 		<nav class="nav">
 			<div class="navContent">
-				<a class="yellowHeader logOut" href="index.html">
-					Log <br /> Out
+				<a href="viewOrder.html">
+					<img class="navArrow" src="images/arrow.svg" alt="Return" />
 				</a>
 				<a href="menu.html">
 					<img class="navImg" src="images/The-Realm-Logo1.png" alt="Main Menu" />
@@ -21,36 +21,28 @@
 			</div>
 			<hr class="navLine"/>
 		</nav>
-		<div class="popDError display">
+		<div class="atCont popDError display">
 			<div class="backgroundPop">
 				<div class="popUp">
-					<div class="exit close">
+					<a class="exit" href="index.html">
 						<span class="crossLeft"></span>
 						<span class="crossRight"></span>
-					</div>
+					</a>
 					<div class="clear"></div>
-						<p class="yellowHeader">
-							Drinks are currently unavailable.
+						<p class="yellowHeader onCard display">
+							The order has been charged.<br />
+							Your name will be called when it is ready.
+						</p>
+						<p class="yellowHeader counter display">
+							Please pay at the counter.
 						</p>
 				</div>
 			</div>
 		</div>
-		<main class="mainMenu">
-			<div class="menuSection FnS">
-				<a class="menuButton" href="favourites.html">
-					Favourites & Specials
-				</a>
-			</div>
-			<div class="menuSection drinks">
-				<p class="menuButton">
-					Drinks
-				</p>
-			</div>
-			<div class="menuSection breakfast">
-				<a class="menuButton" href="menuFood.html">
-					Food
-				</a>
-			</div>
+		<main class="mainContent flexCol">
+			<p class="paymentButton alignCenter CC">Credit Card</p>
+			<p class="paymentButton alignCenter cash">Cash</p>
+			<p class="paymentButton alignCenter tab">On Tab</p>
 		</main>
 		<script src="js/jquery-3.3.1.js"></script>
 		<script src="js/script.js"></script>
