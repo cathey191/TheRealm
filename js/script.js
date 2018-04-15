@@ -12,6 +12,10 @@ $(document).ready(function(){
 	 	test.find(".originalText").show();
 	 }
 
+	 $(".drinks, .kMenu, .brunch").click(function(){
+		 $(".popDError").removeClass("display")
+	 });
+
 	 var date = new Date();
 	 var day = date.getDay();
 	 var hour = date.getHours();
@@ -34,14 +38,14 @@ $(document).ready(function(){
 	 } else {
 		 $(".pizzaDeal").hide();
 	 }
-	 if (day == 1 || 3 && hour >= 16){
+	 if ((day == 1 || 3) && hour >= 16){
 		 $(".twoMains").show();
 	 } else {
 		 $(".twoMains").hide();
 	 }
 
 	 $(".exit").click(function(){
- 		$(".popContainer").addClass("display");
+ 		$(".popContainer, .popDError").addClass("display");
  	});
 
 });

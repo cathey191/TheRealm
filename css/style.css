@@ -182,7 +182,8 @@ body {
   font-style: normal;
   font-weight: bold;
   margin: 0px 5px;
-  border: none; }
+  border: none;
+  font-size: 18px; }
 
 .input {
   background-color: #faf5e3;
@@ -190,7 +191,7 @@ body {
   border: none;
   margin: 7px; }
 
-.popContainer {
+.popContainer, .popDError {
   width: 100vw;
   height: 100vh;
   position: fixed; }
