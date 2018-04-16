@@ -54,20 +54,21 @@ body{
 	padding-top: 55px;
 	width: 100vw;
 	height: 100vh;
+	margin: 0 auto;
 }
 .section{
 	@include allSections;
-	height: 32vh;
+	height: 33.3%;
 	min-height: 150px;
 }
 .menuSection{
 	@include allSections;
-	height: 32vh;
+	height: 33.3%;
 	min-height: 150px;
 }
 .favSection{
 	@include allSections;
-	height: 46vh;
+	height: 50%;
 }
 .favItems{
 	width: 90%;
@@ -82,7 +83,7 @@ body{
 	padding-top: 30px;
 }
 
-// buttons
+// Buttons
 .menuButton{
 	background-color: $darkColor;
 	color: $darkYellow;
@@ -111,6 +112,7 @@ body{
 	@include button;
 }
 
+// Text
 .yellowHeader{
 	text-decoration: none;
 	color: $darkYellow;
@@ -195,7 +197,7 @@ body{
 	-moz-transform: rotate(-45deg);
 }
 
-// stand alone
+// Stand Alone
 .floatLeft{
 	float: left;
 }
@@ -220,6 +222,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 .botPad{
 	padding-bottom: 30px;
@@ -231,7 +234,7 @@ body{
 	display: none;
 }
 
-// Menu Options
+// Background Images
 .FnS{
 	background-image: url("../images/tap.jpg");
 	background-position: top center;
@@ -269,18 +272,15 @@ body{
 }
 
 @media only screen and (min-width: 500px){
-	.mainContent{
+	.wrapMain{
 		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
-		justify-content: center;
+		align-content: center;
 	}
 	.section{
 		margin: 0px;
 		width: 50vw;
-	}
-	.favSection{
-		margin: 0px;
-		max-height: 400px;
 	}
 	.menuSection{
 		margin: 0 auto;
@@ -291,8 +291,5 @@ body{
 @media only screen and (min-width: 1000px) {
 	.navContent{
 		max-width: 750px;
-	}
-	.menuOption{
-		margin: 0px 15px;
 	}
 }

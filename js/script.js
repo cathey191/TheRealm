@@ -25,7 +25,7 @@ $(document).ready(function(){
 	$('.close').click(function(){
 	 $('.popContainer, .popDError').addClass('display');
  });
- 
+
 	// variables
 	 var date = new Date();
 	 var day = date.getDay();
@@ -39,8 +39,7 @@ $(document).ready(function(){
 		  $('.brunch').hide();
 			$('.pizza, .dinner, .desserts').show();
 	 }
-   // day 5 to show in presentation on Friday
-	 if (day == 4 && hour >= 16 || day == 5){
+	 if (day == 4 && hour >= 16 || day == 5){ // day 5 to show in presentation on Friday
 		 $('.pizzaDeal, .pizza').show();
 		 $('.popContainer').removeClass('display');
 	 } else {
