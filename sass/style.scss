@@ -114,7 +114,7 @@ body{
 .yellowHeader{
 	text-decoration: none;
 	color: $darkYellow;
-	font-size: text;
+	font-size: $textSmall;
 	@include serif;
 }
 .smallText{

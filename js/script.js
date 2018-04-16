@@ -40,7 +40,7 @@ $(document).ready(function(){
 		 $('.twoMains').hide();
 	 }
 
-	 $('.drinks, .kMenu, .brunch').click(function(){
+	 $('.drinks, .kMenu, .brunch, .dinner, .desserts').click(function(){
 		 $('.popDError').removeClass('display')
 	 });
 	 $('.cash').click(function(){
